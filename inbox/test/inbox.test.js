@@ -47,7 +47,8 @@ describe("Inbox", () => {
     await inbox.methods
       .setMessage("Updated Message")
       .send({ from: accounts[0] });
-      const message = await inbox.methods.message().call();
-      assert.equal(message, "Updated Message");
+    // fetch the data from contract to test the updated message
+    const message = await inbox.methods.message().call();
+    assert.equal(message, "Updated Message");
   });
 });
