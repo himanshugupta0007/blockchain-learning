@@ -10,9 +10,10 @@
   "description": "",
   "dependencies": {
     "ganache": "^7.9.2",
-    "mocha": "^10.6.0",
+    "inbox": "file:",
+    "mocha": "^10.7.0",
     "solc": "^0.4.17",
     "web": "^0.0.2",
-    "web3": "^4.10.0"
+    "web3": "^4.11.1"
   }
 }
